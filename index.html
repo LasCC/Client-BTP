@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+      integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.3/css/unicons.css"
+    />
+    <link rel="stylesheet" href="assets/main.css" />
+    <title>BTP Webiste</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar-expand-lg sticky-top navbar p-3" id="navbarChange">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><i class="uil uil-archway"></i><strong>BTP</strong></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggle"
+          aria-controls="navbarToggle"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="uil uil-align-center-alt"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggle">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" data-scroll href="#accueil"
+                ><strong>Accueil</strong></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-scroll href="#realisations"
+                ><strong>Réalisations</strong></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-scroll href="#expertise"
+                ><strong>Expertise</strong></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-scroll href="#contact"
+                ><strong>Contact</strong></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End navbar -->
+    <!-- Header -->
+    <div class="container" id="accueil">
+      <div class="row justify-content-md-center">
+        <div class="mt-5 d-flex align-items-center" style="margin-top: 300px;">
+          <div class="align-items-center col-12 col-sm-6 col-md-5">
+            <h1
+              style="font-weight: bold; margin-bottom: 15px; color: black; font-size: 34px"
+              class="animated fadeInDown"
+            >
+              [Entreprise], le partenaire incontournable pour réaliser votre
+              projet.
+            </h1>
+            <span class="animated fadeInDown delay-1s">
+              Around 35,000 BC, Homo sapiens discovered the benefits of the
+              application of rotary tools. This would have rudimentarily
+              consisted of a pointed rock being spun between the hands to bore a
+              hole through another material. The core drill was developed in
+              ancient Egypt by 3000 BC.
+            </span>
+            <br />
+            <br />
+            <a data-scroll href="#contact">
+              <button
+                class="btn animated fadeInDown delay-2s btn-header-left mr-3"
+              >
+                Nous contacter
+              </button>
+            </a>
+            <a data-scroll href="#realisations">
+              <button class="btn animated fadeInDown delay-2s btn-header-right">
+                Nos réalisations
+              </button>
+            </a>
+          </div>
+          <div
+            class="mt-5 d-flex align-items-center col-12 col-sm-6 col-md-7 d-none d-lg-inline-flex"
+          >
+            <!-- <img
+                     src="https://i.imgur.com/ZQmIMRt.png"
+                     alt="imageHeader"
+                     class="d-none d-lg-inline-flex"
+                     style="width: fill-available; margin-left: 50px"
+                     /> -->
+            <img
+              src="https://i.imgur.com/yRJZXpt.png"
+              alt="imageHeader"
+              class="d-none d-lg-inline-flex"
+              style="width: fill-available; margin-left: 50px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End header -->
+    <!-- Carousel  -->
+    <div class="bg-expertise" id="realisations">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-md-center mb-5">
+              <div
+                class="col col-sm-6 col-md-5 mt-5"
+                data-toggle="modal"
+                data-target="#posecuisineModal"
+              >
+                <div class="card-carousel hoverCard">
+                  <h1 id="realisations">Pose de cuisine</h1>
+                  <hr />
+                  <img
+                    src="https://source.unsplash.com/800x600/?worker"
+                    class="img-fluid"
+                    alt="pose_cuisine_image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal pose cuisine -->
+          <div
+            class="modal fade"
+            id="posecuisineModal"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content card-carousel align-middle">
+                <div class="modal-header">
+                  <h1>
+                    Pose de cuisine
+                  </h1>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    The hollow-borer tip, first used around the 13th century,
+                    consisted of a stick with a tubular shaped piece of metal on
+                    the end, such as copper. This allowed a hole to be drilled
+                    while only actually grinding the outer section of it. This
+                    completely separates the inner stone or wood from the rest,
+                    allowing the drill to pulverize less material to create a
+                    similarly sized hole.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Fermer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pose de carrelage -->
+          <div class="carousel-item">
+            <div class="row justify-content-md-center mb-5">
+              <div
+                class="col col-sm-6 col-md-5 mt-5"
+                data-toggle="modal"
+                data-target="#posecarrelageModal"
+              >
+                <div class="card-carousel hoverCard">
+                  <h1 class="br">Pose de carrelage</h1>
+                  <hr />
+                  <img
+                    src="https://source.unsplash.com/800x600/?worker"
+                    class="img-fluid"
+                    alt="pose_cuisine_image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal pose carrelage -->
+          <div
+            class="modal fade"
+            id="posecarrelageModal"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content card-carousel align-middle">
+                <div class="modal-header">
+                  <h1>
+                    Pose de carrelage
+                  </h1>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    The hollow-borer tip, first used around the 13th century,
+                    consisted of a stick with a tubular shaped piece of metal on
+                    the end, such as copper. This allowed a hole to be drilled
+                    while only actually grinding the outer section of it. This
+                    completely separates the inner stone or wood from the rest,
+                    allowing the drill to pulverize less material to create a
+                    similarly sized hole.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Fermer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Electricité -->
+          <div class="carousel-item">
+            <div class="row justify-content-md-center mb-5">
+              <div
+                class="col col-sm-6 col-md-5 mt-5"
+                data-toggle="modal"
+                data-target="#electriciteModal"
+              >
+                <div class="card-carousel hoverCard">
+                  <h1 class="br">Electricité</h1>
+                  <hr />
+                  <img
+                    src="https://source.unsplash.com/800x600/?worker"
+                    class="img-fluid"
+                    alt="pose_cuisine_image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal Electricité -->
+          <div
+            class="modal fade"
+            id="electriciteModal"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content card-carousel align-middle">
+                <div class="modal-header">
+                  <h1>
+                    Electricité
+                  </h1>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    The hollow-borer tip, first used around the 13th century,
+                    consisted of a stick with a tubular shaped piece of metal on
+                    the end, such as copper. This allowed a hole to be drilled
+                    while only actually grinding the outer section of it. This
+                    completely separates the inner stone or wood from the rest,
+                    allowing the drill to pulverize less material to create a
+                    similarly sized hole.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Fermer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Manutention -->
+          <div class="carousel-item">
+            <div class="row justify-content-md-center mb-5">
+              <div
+                class="col col-sm-6 col-md-5 mt-5"
+                data-toggle="modal"
+                data-target="#manutentionModal"
+              >
+                <div class="card-carousel hoverCard">
+                  <h1 class="br">Manutention</h1>
+                  <hr />
+                  <img
+                    src="https://source.unsplash.com/800x600/?worker"
+                    class="img-fluid"
+                    alt="pose_cuisine_image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal Manutention -->
+          <div
+            class="modal fade"
+            id="manutentionModal"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content card-carousel align-middle">
+                <div class="modal-header">
+                  <h1>
+                    Manutention
+                  </h1>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    The hollow-borer tip, first used around the 13th century,
+                    consisted of a stick with a tubular shaped piece of metal on
+                    the end, such as copper. This allowed a hole to be drilled
+                    while only actually grinding the outer section of it. This
+                    completely separates the inner stone or wood from the rest,
+                    allowing the drill to pulverize less material to create a
+                    similarly sized hole.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Fermer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- Main content -->
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="mt-5 d-flex align-items-center">
+          <div
+            style="width: 40%"
+            class="align-items-center col-12 col-sm-6 col-md-5"
+          >
+            <h1
+              style="font-weight: bold; margin-bottom: 15px; color: black; font-size: 34px"
+              class="animated fadeInDown"
+            >
+              Faites nous confiance, choisissez [Entreprise] pour réaliser vos
+              travaux.
+            </h1>
+            <span class="animated fadeInDown delay-1s">
+              For much of the 20th century, many attachments could commonly be
+              purchased to convert corded electric hand drills into a range of
+              other power tools, such as orbital sanders and power saws, more
+              cheaply than purchasing dedicated versions of those tools. As the
+              prices of power tools and suitable electric motors have fallen
+              such attachments have become much less common.
+            </span>
+            <br />
+            <br />
+            <a data-scroll href="#contact">
+              <button class="btn animated fadeInDown delay-2s btn-header-right">
+                Nous contacter
+              </button>
+            </a>
+          </div>
+          <div
+            style="width: 60%; height: 100%"
+            class="mt-5 d-flex align-items-center col-12 col-sm-6 col-md-7 d-none d-lg-inline-flex"
+          >
+            <img
+              src="https://i.imgur.com/csTMHQe.png"
+              alt="image_main_content"
+              class="d-none d-lg-inline-flex"
+              style="width: 100%; margin-left: 50px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End main -->
+    <!-- Expertise -->
+    <div class="bg-expertise" id="expertise">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm p-5 mt-5">
+            <h2 style="font-size: 30px; font-weight: bold">
+              Notre expertise
+            </h2>
+            <p class="text-secondary">
+              In terms of food production worldwide, the atlas shows that women
+              produce 80% of the food in Sub-Saharan Africa, 50% in Asia, 45% in
+              the Caribbean, 25% in North Africa and in the Middle East, and 25%
+              in Latin America.
+            </p>
+            <button
+              class="btn animated fadeInDown delay-2s btn-header-left"
+              data-toggle="modal"
+              data-target="#ensavoirplusModal"
+            >
+              En savoir plus
+            </button>
+          </div>
+          <!-- Modal entreprise en savoir plus  -->
+          <div
+            class="modal fade"
+            id="ensavoirplusModal"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content card-carousel align-middle">
+                <div class="modal-header">
+                  <h1>En savoir plus</h1>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    The Penguin Atlas of Women in the World, published in 2008,
+                    stated that in Madagascar, women spend 20 hours per week on
+                    housework, while men spend only two.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Fermer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm p-5">
+            <div class="card-expertise hoverCard">
+              <h1>Electricien</h1>
+              <hr />
+              <img
+                src="https://source.unsplash.com/800x600/?worker"
+                alt="Electricien_source"
+              />
+            </div>
+          </div>
+          <div class="col-sm p-5">
+            <div class="card-expertise hoverCard">
+              <h1>Electricien</h1>
+              <hr />
+              <img
+                src="https://source.unsplash.com/800x600/?worker"
+                alt="Electricien_source"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm p-5">
+            <div class="card-expertise hoverCard">
+              <h1>Electricien</h1>
+              <hr />
+              <img
+                src="https://source.unsplash.com/800x600/?worker"
+                alt="Electricien_source"
+              />
+            </div>
+          </div>
+          <div class="col-sm p-5">
+            <div class="card-expertise hoverCard">
+              <h1>Electricien</h1>
+              <hr />
+              <img
+                src="https://source.unsplash.com/800x600/?worker"
+                alt="Electricien_source"
+              />
+            </div>
+          </div>
+          <div class="col-sm p-5">
+            <div class="card-expertise hoverCard">
+              <h1>Electricien</h1>
+              <hr />
+              <img
+                src="https://source.unsplash.com/800x600/?worker"
+                alt="Electricien_source"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End expertise -->
+    <!-- Contact -->
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="mt-5 mb-5 d-flex align-items-center">
+          <div
+            style="width: 40%"
+            class="align-items-center col-12 col-sm-6 col-md-5"
+          >
+            <h1
+              style="font-weight: bold; margin-bottom: 15px; color: black; font-size: 34px"
+              class="animated fadeInDown"
+            >
+              Faites une demande de devis gratuitement !
+            </h1>
+            <span class="animated fadeInDown delay-1s">
+              The Penguin Atlas of Women in the World also stated that in
+              developing countries, women and girls spend a significant amount
+              of time fetching water for the week, while men do not. For
+              example, in Malawi women spend 6.3 hours per week fetching water,
+              while men spend 43 minutes. Girls in Malawi spend 3.3 hours per
+              week fetching water, and boys spend 1.1 hours.
+            </span>
+            <br />
+            <br />
+            <a
+              href="mailto:mail@gmail.com?subject=Demande%20de%20renseignement"
+            >
+              <button
+                class="btn animated fadeInDown delay-2s btn-header-right w-100"
+              >
+                Faire ma demande par mail
+              </button>
+            </a>
+          </div>
+          <div
+            style="width: 60%; height: 100%"
+            class="mt-5 d-flex align-items-center col-12 col-sm-6 col-md-7 d-none d-lg-inline-flex"
+          >
+            <div
+              class="embed-responsive embed-responsive-1by1 d-none d-lg-inline-flex"
+              id="contact"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d171.73124707187526!2d2.292524009839431!3d48.855724643178895!2m3!1f23.625000000000014!2f61.61642456798487!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x47e66fe1f3bfb4ad%3A0x7bd31375becf28cd!2sEiffel%20Tower%2C%205%20Avenue%20Anatole%20France%2C%2075007%20Paris!5e1!3m2!1sen!2sfr!4v1584086961052!5m2!1sen!2sfr"
+                style="border-radius: 15px; border: 0;"
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End contact -->
+  </body>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    $("#carousel").carousel({
+      interval: 1
+    });
+  </script>
+  <script>
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1000,
+      easing: "easeOutCubic"
+    });
+  </script>
+  <script>
+    window.onscroll = function() {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        document.getElementById("navbarChange").style.backgroundColor = "white";
+        document.getElementById("navbarChange").style.boxShadow =
+          "box-shadow: 0px 10px 36px -2px rgba(0, 0, 0, 0.18);";
+      } else {
+        document.getElementById("navbarChange").style.backgroundColor =
+          "transparent";
+        document.getElementById("navbarChange").style.boxShadow = "none";
+      }
+    }
+  </script>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+    integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+    integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+    crossorigin="anonymous"
+  ></script>
+</html>
