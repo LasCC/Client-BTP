@@ -9,7 +9,7 @@ This landing page uses a number of open source projects to work properly:
 - Jquery with scroll animation 
 - Bootstrap with Material-UI
 
-And of course this blog itself is open source with a public repository https://github.com/LasCC/Client-BTP on Github.
+And of course this landing page itself is open source with a public repository https://github.com/LasCC/Client-BTP on Github.
 
 ### Todos
 
